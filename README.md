@@ -30,9 +30,27 @@
 
 ## 安装
 
+### 方法一：安装到当前用户（全局可用）
+
 ```bash
-claude plugins install Waylon524/美签面试官.SKILL
+# 克隆到 Claude Code 用户 skills 目录
+git clone https://github.com/Waylon524/us-visa.SKILL.git "$HOME/.claude/skills/us-visa"
 ```
+
+安装后重启 Claude Code 即可使用，所有项目都能调用。
+
+### 方法二：安装到当前项目（仅项目内可用）
+
+```bash
+# 克隆到项目的 .claude/skills 目录
+git clone https://github.com/Waylon524/us-visa.SKILL.git .claude/skills/us-visa
+```
+
+适合只想在特定项目中使用，或团队共享 skill 的场景。
+
+### 方法三：直接下载
+
+不用 git 的话，直接下载 ZIP 解压到 `~/.claude/skills/us-visa/` 或项目的 `.claude/skills/us-visa/` 即可。
 
 ---
 
